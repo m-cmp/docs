@@ -1,2 +1,2 @@
-# docs
-Overall documentations for multi-cloud management platform (M-CMP)
+# Multi-Cloud Management Platform
+Documentation for multi-cloud management platform (M-CMP)
