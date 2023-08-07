@@ -15,32 +15,32 @@
         -	PR, 본인이 작업한 브랜치의 내용을 upstream에 반영해 달라고 요청하는 작업
 
 ## 컨트리뷰션 절차
-- 개인 GitHub 계정(예시: cb-contributor)으로, 컨트리뷰션 원하는 프로젝트(예시:cloud-barista/cb-tumblebug)를 Fork한다.
+- 개인 GitHub 계정(예시: contributor)으로, 컨트리뷰션 원하는 프로젝트(예시:m-cmp/mc-infra-manager)를 Fork한다.
 - 자신의 GitHub 계정에 있는 Fork된 Repository를 개발 환경에 Clone한다(Fork된 Repository는 **Origin으로 통용**).
-- 본 예시에서는 cb-tumblebug라는 Repository를 대상으로 한다.
+- 본 예시에서는 mc-infra-manager라는 Repository를 대상으로 한다.
 
 - 자신의 GitHub 계정에 있는 Fork된 Repository를 개발 환경에 Clone한다.
 
-`$ git clone https://github.com/cb-contributor/cb-tumblebug.git`
+`$ git clone https://github.com/contributor/mc-infra-manager.git`
 
 - Clone된 디렉토리에 들어가서, Git의 Repository 상태를 확인한다.
 
 `$ git remote -v`
 ```
-origin	git@github.com:cb-contributor/cb-tumblebug.git (fetch)
-origin	git@github.com:cb-contributor/cb-tumblebug.git (push)
+origin	git@github.com:contributor/mc-infra-manager.git (fetch)
+origin	git@github.com:contributor/mc-infra-manager.git (push)
 ```
 
 - Remote repository를 추가로 지정한다(프로젝트의 본래 Repository이고 **Upstream으로 통용**).
 
-`$ git remote add upstream https://github.com/cloud-barista/cb-tumblebug.git`
+`$ git remote add upstream https://github.com/m-cmp/mc-infra-manager.git`
 
 `$ git remote -v`
 ```
-origin	git@github.com:cb-contributor/cb-tumblebug.git (fetch)
-origin	git@github.com:cb-contributor/cb-tumblebug.git (push)
-upstream	git@github.com:cloud-barista/cb-tumblebug.git (fetch)
-upstream	git@github.com:cloud-barista/cb-tumblebug.git (push)
+origin	git@github.com:contributor/mc-infra-manager.git (fetch)
+origin	git@github.com:contributor/mc-infra-manager.git (push)
+upstream	git@github.com:m-cmp/mc-infra-manager.git (fetch)
+upstream	git@github.com:m-cmp/mc-infra-manager.git (push)
 ```
 
 - Upstream 저장소의 최신 내용을 fetch(정보 업데이트)한다.
@@ -117,7 +117,7 @@ nothing to commit, working tree clean
 
 `$ git fetch upstream`
 ```
-From github.com:cloud-barista/cb-tumblebug
+From github.com:m-cmp/mc-infra-manager
  * [new branch]      main     -> upstream/main
 ```
 
@@ -140,9 +140,9 @@ Total 5 (delta 3), reused 0 (delta 0)
 remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
 remote: 
 remote: Create a pull request for 'feature-add-new-idea' on GitHub by visiting:
-remote:      https://github.com/cb-contributor/cb-tumblebug/pull/new/feature-add-new-idea
+remote:      https://github.com/contributor/mc-infra-manager/pull/new/feature-add-new-idea
 remote: 
-To github.com:cb-contributor/cb-tumblebug.git
+To github.com:contributor/mc-infra-manager.git
  * [new branch]      feature-add-new-idea -> feature-add-new-idea
 ```
 
